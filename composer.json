@@ -1,6 +1,6 @@
 {
-    "name": "yuk1/laravel-redshift",
-    "description": "This is a package to handle Redshift in Laravel like eloquent.",
+    "name": "codeapi/laravel-redshift",
+    "description": "Fork from merlijnbuit/laravel-redshift and YuK1Game/laravel-redshift. This is a package to handle Redshift in Laravel like eloquent.",
     "license": "MIT",
     "authors": [
         {
@@ -8,7 +8,7 @@
             "email": "develop@yuk1.jp"
         }
     ],
-    "homepage": "https://github.com/yuk1/laravel-redshift",
+    "homepage": "https://github.com/ThomasBUEE/laravel-redshift",
     "keywords": ["Laravel", "Redshift"],
     "require": {
         "illuminate/support": "~7|~8"
