@@ -14,7 +14,7 @@ This library exists to absorb them and make it possible to handle Redshift on La
 Via Composer
 
 ``` bash
-$ composer require yuk1/laravel-redshift
+$ composer require codeapi/laravel-redshift
 ```
 
 ## Usage
