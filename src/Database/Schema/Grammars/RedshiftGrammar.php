@@ -123,6 +123,20 @@ class RedshiftGrammar extends PostgresGrammar
     return null;
   }
 
+  public function compileAdd(Blueprint $blueprint, Fluent $command)
+  {
+    return array_values(array_filter(array_merge(array_map(
+      function($col) use ($blueprint) {
+        return sprintf(
+          'alter table %s add column %s',
+          $this->wrapTable($blueprint),
+          $col
+        );
+      },
+      $this->getColumns($blueprint)
+		), $this->compileAutoIncrementStartingValues($blueprint))));
+  }
+
   /**
    * Create the column definition for a uuid type.
    *
